@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+
+    </script>
+    <script type="text/javascript" src="adobe_test.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="my_style.css">
+
+
+</head>
+    <body onbeforeunload="handleBrowserCloseButton(event);">
+
+        <div class = "aside"   >
+
+            <div  action = "connect.php"  class = "thermostat"; style="position: relative; display: block; left: 25%; top: 2%;">
+                <form  method="get" >
+                    <input id="therm" class="therm" type="range" name="temperature" min="60" max="90" style="">
+                </form>
+                <span id="newValue" value="0">0</span>
+            </div>
+
+            <label class="switch"  >
+                <input  type="checkbox">
+                <div id="light" class="slider round">
+                    <div style="color: white; position: absolute; bottom: 0; font-size: 12px; left: 25%">Lights off</div>
+                </div>
+
+            </label>
+
+
+            <label class="switch">
+                <input id="curtainid" type="checkbox" >
+                <div class="slider round">
+                    <div style="color: white; position: absolute; font-size: 12px; bottom: 0; left: 25%">Curtain Open</div>
+
+                </div>
+            </label>
+
+
+            <label class="switch">
+                <input id="doorid" type="checkbox">
+                <div class="slider round">
+                    <div style="color: white; position: absolute; bottom: 0; font-size: 12px;left: 25%">Door Look</div>
+
+                </div>
+
+            </label>
+            <label class="switch">
+                <input id="garageid" type="checkbox">
+                <div class="slider round">
+                    <div style="color: white; position: absolute; bottom: 0; font-size: 12px;left: 25%">Garage door</div>
+
+                </div>
+            </label>
+
+            <label class="switch">
+                <input id="water-heater" type="checkbox" >
+                <div class="slider round">
+                    <div style="color: white; position: absolute; font-size: 12px; bottom: 0; left: 25%">Water Heater</div>
+
+                </div>
+            </label>
+            <label class="switch">
+                <input id="sprinklers" type="checkbox" >
+                <div class="slider round">
+                    <div style="color: white; position: absolute; font-size: 12px; bottom: 0; left: 25%">Sprinklers</div>
+                </div>
+            </label>
+        </div>
+
+        <div class="article">
+
+                 <div class="house-base" >
+
+                        <div class="roof">
+                            <div class="chimney"></div>
+                            <div class="smoke1"></div>
+                            <div class="smoke2"></div>
+                            <div class="smoke3"></div>
+
+                        </div>
+
+                        <div id="house" class="house-body">
+
+                            <div id="window" class="window">
+                                <div class = "window-frame"></div>
+                            </div>
+
+                            <div id ="window-light" class="window-light"></div>
+                            <div  class="curtain"></div>
+
+                            <div id="window2" class="window2">
+                                <div class = "window-frame2"></div>
+                             </div>
+
+                            <div id ="window-light2" class="window-light2"></div>
+                            <div class="curtain2"></div>
+
+                            <div id="door" class="door"></div>
+
+                            <div class="door-background"></div>
+
+                            <div class="garage">
+                                <div class = "garage-roof"></div>
+                                <div class="garage-body">
+                                    <div id = "garage-door" class="garage-door"></div>
+                                    <div class="garage-background"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="sprinkler1">
+                                <div   class="sp-water" style="margin-top: 25px ;margin-left: 20px;"></div>
+                                <div  class="sp-water" style="margin-top: 12px; margin-left: 20px ;"></div>
+                                <div  class="sp-water" style="margin-top: 0px ;margin-left: 20px;"></div>
+                                <div  class="sp-water" style="margin-top: 17px; margin-left: 30px;"></div>
+                                <div   class="sp-water" style="margin-top: 5px; margin-left: 40px;"></div>
+                                <div  class="sp-water" style="margin-top: 17px; margin-left: 10px;"></div>
+                                <div  class="sp-water" style="margin-top: 5px; "></div>
+                                <div  class="sprinklerBody"></div>
+
+
+                            </div>
+                            <div class="sprinkler2">
+
+                                <div   class="sp-water" style="margin-top: 25px ;margin-left: 20px;"></div>
+                                <div  class="sp-water" style="margin-top: 12px; margin-left: 20px ;"></div>
+                                <div  class="sp-water" style="margin-top: 0px ;margin-left: 20px;"></div>
+                                <div  class="sp-water" style="margin-top: 17px; margin-left: 30px;"></div>
+                                <div   class="sp-water" style="margin-top: 5px; margin-left: 40px;"></div>
+                                <div  class="sp-water" style="margin-top: 17px; margin-left: 10px;"></div>
+                                <div  class="sp-water" style="margin-top: 5px; "></div>
+                                <div  class="sprinklerBody"></div>
+                            </div>
+
+
+
+                        </div>
+                </div>
+
+                <div class="bottom-panel">
+
+                    <div class="info-panel">
+                        <div style="display: inline ; left: 10%; position:relative;">
+                            <div style="display:block">
+                                <div id="door-look" class="first-row"> Door Locked</div>
+                                <div  id="window-close" class="first-row"> Curtains Closed</div>
+                                <div id="garage-open" class="first-row">Garage Opened</div>
+                            </div>
+                            <div style="display: block">
+                                <div id="light-on" class="second-row"> Light OFF</div>
+                                <div id="sprinklers-on" class="second-row"> Sprinklers OFF</div>
+                                <div id="water-heater-on" class="second-row">Water Heater OFF</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-time">
+                        <div class="third-row"><br><br><br>SLC UT: 67 degrees  <br> <br><br> Inside Temperature: 73 degrees</div>
+                    </div>
+
+                </div>
+        </div>
+
+    </body>
+
+</html>

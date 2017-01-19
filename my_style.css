@@ -1,0 +1,544 @@
+html, body{
+}
+
+
+.body
+{
+    height: 100%;
+    width: 100%;
+}
+*
+{
+    box-sizing: border-box;
+}
+
+
+.aside
+{
+    width: 15%;
+    float:left;
+    padding: 15px;
+    border-right: 2px solid #739acc;
+    height: 100vh;
+    left:25%;
+}
+
+.article
+{
+    width: 85%;
+    float: left;
+    height: 100vh;
+}
+
+.bottom-panel
+{
+    position: absolute;
+    bottom:0;
+    left:15%;
+    width:85%;
+    border-top: 2px solid #739acc;
+}
+
+.info-panel
+{
+    display: inline;
+    width:70%;
+    float: left;
+    border: 2px solid black;
+    position: relative;
+
+
+}
+.weather-time
+{
+    display: inline;
+    width: 30%;
+    float: left;
+    border: 2px solid black;
+}
+
+.house-base
+{
+    top :20%;
+    left: 50%;
+    float: left;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -100px;
+
+}
+
+.curtain
+{
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 15px;
+    width: 50px;
+    height: 5px;
+    background:saddlebrown;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.curtain2
+{
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 180px;
+    width: 50px;
+    height: 5px;
+    background:saddlebrown;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.window-light
+{
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    background:yellow;
+    border: 2px solid black;
+
+}
+
+.window-light2
+{
+    margin-top: 25px;
+    margin-left: 180px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background:yellow;
+    border: 2px solid black;
+
+}
+
+
+
+.smoke3
+{
+    margin-left: 90px;
+    width:7px;
+    height:5px;
+    position: relative;
+    display: none;
+    background-color: #919191;
+}
+.smoke2
+{
+    margin-left: 89px;
+    margin-top: 8px;
+    width:10px;
+    height:7px;
+    position: absolute;
+    display: none;
+    background-color: #919191;
+}
+.smoke1
+{
+    margin-left: 87px;
+    margin-top: 18px;
+    width:15px;
+    height:10px;
+    position: absolute;
+    display: none;
+    background-color: #919191;
+}
+
+.roof
+{
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 70px solid #333300;
+}
+
+.chimney
+{
+    margin-left: 80px;
+    margin-top: 30px;
+    width:25px;
+    height:30px;
+    position: absolute;
+    background-color: #ffcc66;
+    border: 2px solid black;
+    border-bottom:hidden;
+
+}
+
+.house-body
+{
+    margin-left: 23px;
+    width: 250px;
+    height: 150px;
+    background-color: #ffcc66;
+    border: 2px solid black;
+    border-top: hidden;
+
+}
+
+.window
+{
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    background:#919191;
+    z-index: 1;
+    border: 2px solid black;
+
+}
+
+.window-frame
+{
+
+}
+
+.window2
+{
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 180px;
+    width: 50px;
+    height: 50px;
+    background:#919191;
+    z-index: 1;
+    border: 2px solid black;
+
+}
+
+.window-frame2
+{
+
+}
+
+.door
+{
+    margin-top: 48px;
+    position: absolute;
+    margin-left: 100px;
+    width: 50px;
+    height: 100px;
+    background-color: darkred;
+    border: 2px solid black;
+    z-index: 2;
+
+
+}
+
+.door-background
+{
+    margin-top: 48px;
+    position: absolute;
+    margin-left: 100px;
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.garage
+{
+    position: absolute;
+    margin-left:300px ;
+
+}
+
+.garage-roof
+{
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 70px solid #333300;
+}
+
+.garage-body
+{
+    margin-left: 10px;
+    width: 150px;
+    height: 80px;
+    background-color: #ffcc66;
+    border: 2px solid black;
+    border-top: hidden;
+}
+
+.garage-door
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 130px;
+    height: 68px;
+    background-color: floralwhite;
+    border: 2px solid black;
+    z-index:2;
+}
+
+.sprinkler1
+{
+    position: absolute;
+    width:5px;
+    height:10px;
+    margin-top:230px ;
+    margin-left: 20px;
+    display:none;
+}
+.sprinklerBody
+{
+    width:5px;
+    height:10px;
+    position: absolute;
+    background-color: black;
+    margin-top:35px;
+    margin-left: 20px;
+}
+.sprinkler2
+{
+    position: absolute;
+    margin-top:230px ;
+    margin-left: 350px;
+    background-color: black;
+    display: none;
+}
+.sp-water
+{
+    position: absolute;
+    width:5px;
+    height:5px;
+    background-color: #1dd1f9;
+
+}
+
+
+.garage-background
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 130px;
+    height: 68px;
+    background-color: black;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.third-row
+{
+    width: 250px;
+    height: 215px;
+    background-color: #739acc;
+    border-radius: 5px;
+    color: #ffc6d6;
+    position: relative;
+    left:10%;
+    text-align: center;
+
+
+}
+.first-row
+{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    background-color: #50cc26;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    font-size: 20px;
+
+
+}
+
+
+.second-row
+{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin:5px;
+    background-color: #50cc26;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+
+/* custom range slider across all browsers using a css range customization software online */
+/* http://danielstern.ca/range.css/#/ */
+input[type=range]
+{
+    -webkit-appearance: none;
+    width: 100px;
+    margin: 0.55px 0;
+
+
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100px;
+    height: 29.9px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+    background: #739acc;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 40px;
+    width: 10px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -0.75px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #739acc
+}
+input[type=range]::-moz-range-track {
+    width: 100px;
+    height: 29.9px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+    background: #739acc;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 31px;
+    width: 33px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 29.9px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #739acc;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+    background: #739acc;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 31px;
+    width: 33px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    height: 29.9px;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #739acc;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #739acc;
+}
+
+
+/* custom checkbox for the controls located on the left*/
+.switch {
+
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 70px;
+    left:25%;
+    top:2%;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 5px;
+
+
+}
+.switch:hover
+{
+    box-shadow: 0 1px 3px #739acc, 0 1px 2px #739acc;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 50px;
+    width: 40px;
+    left: 4px;
+    bottom: 20px;
+    right: 4px;
+    top:4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+input:checked + .slider {
+    background-color: #739acc;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #739acc;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(52px);
+    -ms-transform: translateX(52px);
+    transform: translateX(52px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 5px;
+}
+
+.slider.round:before {
+    border-radius: 5%;
+}
+
