@@ -130,9 +130,9 @@ class ThreadedEchoHandler implements Runnable
    public synchronized String getFile(String filename)
    {
 	   int bytesRead = 0;
-	    int current = 0;
+	   byte[] aByte = new byte[1024];
 	   // receive file
-	      byte [] mybytearray  = new byte [FILE_SIZE];
+	       ByteArrayOutputStream baos = new ByteArrayOutputStream();
 	     
 	      try {
 			fos = new FileOutputStream(filename);
@@ -142,37 +142,32 @@ class ThreadedEchoHandler implements Runnable
 		}
 	      bos = new BufferedOutputStream(fos);
 	      try {
-			bytesRead = inStream.read(mybytearray,0,mybytearray.length);
+			bytesRead = inStream.read(aByte,0,aByte.length);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	      current = bytesRead;
+	     
 
-	      do {
-	         try {
-				bytesRead =
-				    inStream.read(mybytearray, current, (mybytearray.length-current));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-	         if(bytesRead >= 0) current += bytesRead;
-	      } while(bytesRead > -1);
+	       do {
+                        baos.write(aByte);
+                        bytesRead = inStream.read(aByte);
+                } while (bytesRead != -1);
 
 	      try {
-			bos.write(mybytearray, 0 , current);
+			bos.write(baos.toByteArray());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	      try {
 			bos.flush();
+			bos.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	    return    "File " + filename + " downloaded (" + current + " bytes read)";
+	    return    filename;
    }
    
    
