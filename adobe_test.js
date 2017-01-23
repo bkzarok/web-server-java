@@ -50,8 +50,8 @@ function presetData(jsonData)
         },
         "data":
             {
-                "tempOutside":0,
-                "tempDesire":0
+                "tempOutside":30,
+                "tempDesire":70
             }
 
 
@@ -61,6 +61,7 @@ function presetData(jsonData)
 
 $(document).ready(function()
 {
+    $(".third-row").html("<br><br><br>SLC UT: " +jsonData.data.tempOutside+" degrees  <br> <br><br> Inside Temperature: "+jsonData.data.tempDesire+" degrees");
     $("#light").click(function()
     {
         $(".window, .window2").toggle(this.checked);
